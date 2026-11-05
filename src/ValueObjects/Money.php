@@ -61,7 +61,7 @@ final readonly class Money
 
     public function toDecimalString(int $scale = 2): string
     {
-        return BigDecimal::of($this->amount)->toScale($scale, RoundingMode::HALF_UP)->__toString();
+        return BigDecimal::of($this->amount)->toScale($scale, RoundingMode::HalfUp)->__toString();
     }
 
     public function isZero(): bool
@@ -78,6 +78,6 @@ final readonly class Money
 
     private static function normalizeAmount(string $amount): string
     {
-        return BigDecimal::of($amount)->toScale(2, RoundingMode::HALF_UP)->__toString();
+        return BigDecimal::of($amount)->toScale(2, RoundingMode::HalfUp)->__toString();
     }
 }
