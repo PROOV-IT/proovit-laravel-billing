@@ -25,7 +25,7 @@ final readonly class Percentage
     public function asFraction(): string
     {
         return BigDecimal::of($this->value)
-            ->dividedBy('100', 8, RoundingMode::HALF_UP)
+            ->dividedBy('100', 8, RoundingMode::HalfUp)
             ->__toString();
     }
 
