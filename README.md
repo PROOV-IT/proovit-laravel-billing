@@ -140,6 +140,10 @@ The fluent builder is the recommended public API for applications that do not wa
 
 ## Release notes
 
+### 1.0.8
+
+- Widened the `brick/math` constraint to support 0.14 through 0.20 and switched to the `RoundingMode::HalfUp` case available in all of them
+
 ### 1.0.7
 
 - Backfilled UUID identifiers for existing billing records so historical invoices, quotes, payments, and related resources keep resolving Filament URLs
@@ -178,6 +182,10 @@ The fluent builder is the recommended public API for applications that do not wa
 - The package `Makefile` only covers package-local QA; sandbox commands live at the repository root.
 
 ## Release notes
+
+### 1.0.8
+
+- Widened the `brick/math` constraint to support 0.14 through 0.20 and switched to the `RoundingMode::HalfUp` case available in all of them
 
 ### 1.0.7
 

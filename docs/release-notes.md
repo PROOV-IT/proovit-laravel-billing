@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.0.8
+
+- Widened the `brick/math` constraint to support 0.14 through 0.20 and switched to the `RoundingMode::HalfUp` case available in all of them
+
 ## 1.0.7
 
 - Backfilled UUID identifiers for existing billing records so historical invoices, quotes, payments, and related resources keep resolving Filament URLs
